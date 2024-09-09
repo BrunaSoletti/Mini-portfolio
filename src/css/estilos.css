@@ -1,0 +1,138 @@
+body{
+    background-image: url(../imagens/imagem.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Share Tech', sans-serif;
+    color:aqua;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: rgb(122, 63, 178);
+    width: 370px;
+    border: 2px solid #ffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 300px;
+    border: 3px solid #86599d;
+    width: 150px;
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 24px;
+}
+
+.cartao .minhas-informacoes.cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor:pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #86599d;
+}
+
+.informacoes-abas{
+    background-color: #86599d;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #1f002e;
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span{
+    color: #0b75b0;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .linkedin{
+    background-color: #11a5f7;
+}
+
+.redes-sociais .instagram{
+    background-color: #11a5f7;
+}
